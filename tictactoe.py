@@ -42,7 +42,7 @@ def buttonClicked(b, y, x):
         
         #If there's no winner
         elif winner is None:
-            botMove = bot.bestMoveAB(board.getCurrentBoard())         #Get the best move from the bot
+            botMove = bot.bestMoveAB(board.getCurrentBoard())       #Get the best move from the bot
             buttons[botMove[0]][botMove[1]]["text"] = "O"           #Update the label of the button from the move
             buttons[botMove[0]][botMove[1]].config(state=DISABLED)  #Disable the button
             board.update('O', botMove[0], botMove[1])               #Update the board of the game

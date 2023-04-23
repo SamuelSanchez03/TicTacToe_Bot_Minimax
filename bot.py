@@ -12,6 +12,7 @@ class Bot:
         #Set bestScore to a very small value
         bestScore = -math.inf
 
+        move = None
         #For every possible move
         for i in range(3):
             for j in range(3):
@@ -42,6 +43,7 @@ class Bot:
         #Set bestScore to a very small value
         bestScore = -math.inf
 
+        move = None
         #For every possible move
         for i in range(3):
             for j in range(3):
