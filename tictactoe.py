@@ -81,13 +81,6 @@ def buttonClicked(b, y, x):
         elif winner is None:
             root.after(1000, botMove)
             winner, coords = board.checkIfWon()
-
-    #If the bot won
-    if winner == 'O':
-        winningButtons(coords)                                      #Change the color of the buttons
-        disableButtons()                                            #Disable all the buttons
-        messagebox.showinfo("Tic Tac Toe", winner + " Wins!")       #Show a message with the winner
-        return
     
     #If checkIfWon returns a T is a Tie
     if winner == 'T':                                              
